@@ -1,0 +1,128 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f8;
+    padding: 20px;
+    margin: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+#quiz-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+    max-width: 700px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.question {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.options button {
+    display: block;
+    margin: 8px 0;
+    padding: 12px;
+    width: 100%;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: #f0f0f0;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.options button:hover {
+    background: #e0e0e0;
+}
+
+.correct {
+    border-color: #28a745 !important;
+    background-color: #d4edda !important;
+    color: #155724;
+}
+
+.incorrect {
+    border-color: #dc3545 !important;
+    background-color: #f8d7da !important;
+    color: #721c24;
+}
+
+#score {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#retake-btn {
+    display: none;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    font-size: 1em;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#retake-btn:hover {
+    background-color: #0056b3;
+}
+
+#progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 8px;
+    background: #28a745;
+    width: 0%;
+    transition: width 0.5s ease-in-out;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #quiz-box {
+        padding: 15px;
+    }
+
+    .question {
+        font-size: 1.1em;
+    }
+
+    .options button {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    #retake-btn {
+        width: 100%;
+        font-size: 1em;
+        padding: 12px;
+    }
+
+    #score {
+        font-size: 1em;
+    }
+}
